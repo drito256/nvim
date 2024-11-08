@@ -9,6 +9,9 @@ vim.api.nvim_set_keymap('i', 'jj', '<Esc>', { noremap = true, silent = true })
 -- blocky cursor
 vim.opt.guicursor = ""
 
+-- Set a custom highlight for the current line number
+vim.opt.cursorline = true
+
 -- Bootstrap lazy.nvim
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
